@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>QuizApp - Play</title>
+	<style>
+		img {
+			max-width: 100%;
+		}
+	</style>
+    <link rel="stylesheet" href="game.css">
+</head>
+<body>
+	<div class="text" class="flex-center flex-column">
+		<h1>What is the name of the artist of this painting?</h1>
+	</div>
+	<div class="photo">
+		<div class="image">
+			<h2><img src="./images/monalisa.jpg"></h2>
+		<!--WRONG ANSWER-->
+		<button onclick="wrong(1)" id="incorrect1" class="choice-container">
+			<p class="choice-prefix">A</p>
+			<a class="choice-text">Vermeer</a>
+		</button>
+		<!--WRONG ANSWER-->
+		<button onclick="wrong(2)" id="incorrect2" class="choice-container">
+			<p class="choice-prefix">B</p>
+			<a class="choice-text">Picasso</a>
+		</button>
+		<!--WRONG ANSWER-->
+		<button onclick="wrong(3)" id="incorrect3" class="choice-container">
+			<p class="choice-prefix">C</p>
+			<a class="choice-text">Van Gogh</a>
+		</button>
+		<!--RIGHT ANSWER-->
+		<button onclick="right()" id="correct" class="choice-container">
+			<p class="choice-prefix">D</p>
+			<a class="choice-text">Leonardo Da Vinci</a>
+		</button>
+	<div class="play">
+		<a class="choice-button" href="/caravaggio.html">Next</a>
+	</div>
+<script src="game.js"></script>
+</body>
+</html>
