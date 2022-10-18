@@ -74,6 +74,7 @@ h2 {
 	font-size: 1.3rem;
 	border: 0.1rem currentColor rgb(27, 31, 27);
 	background-color: beige;
+	border-radius: 10px;
 }
 
 .choice-container:hover {
@@ -87,6 +88,7 @@ h2 {
 	padding: 1rem 1.3rem;
 	background-color: rgb(27, 31, 27);
 	color: white;
+	border-radius: 10px;
 }
 
 .choice-text {
@@ -104,6 +106,7 @@ h2 {
 	box-shadow: 0 0.4rem 1.4rem 0 black;
 	background-color: beige;
 	color: rgb(27, 31, 27);
+	border-radius: 10px;
 }
 
 .play {
@@ -113,4 +116,21 @@ h2 {
 	justify-content: center;
 	align-items: center;
   	margin: 0 auto;
+}
+
+
+.wrong {
+	background-color: red;
+}
+
+.correct {
+	background-color: green;
+}
+
+.hidden {
+	display: none;
+}
+
+.avoid-clicks {
+	pointer-events: none;
 }
