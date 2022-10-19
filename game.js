@@ -1,5 +1,6 @@
 let buttonsValue = new Array;
-// let result = 0;
+let result = 0;
+result = localStorage.getItem("clickcount") ? localStorage.getItem("clickcount") : 0;
 // window.localStorage.setItem("result", result);
 // window.localStorage.getItem("result");
 // localStorage.setItem("result", result);
@@ -27,18 +28,27 @@ const enableButtons = function() {
 	for (let i = 0; i < buttons.length; i++) {
 		buttons[i].addEventListener("click", function() {
 			if (buttonsValue[i] == true){
+				console.log(buttonsValue);
 				buttons[i].classList.add("correct");
-				localStorage.clickcount += 1;
-				localStorage.removeItem(localStorage.clickcount);
-				console.log(localStorage.clickcount);
+				// localStorage.clickcount += 1;
+				// localStorage.removeItem(localStorage.clickcount);
 				// document.querySelector("score").textContent = sessionStorage.clickcount;
-				// result++;
+				result++;
+				console.log(result);
+				localStorage.setItem("clickcount", result);
+				// console.log(result);
 			}
 			else
 				buttons[i].classList.add("wrong");
 			disableButtons();
 		});
 	}
+}
+
+function reset ()
+{
+	localStorage.clear();
+	console.log(result);
 }
 
 initGame(indexCorrect);
