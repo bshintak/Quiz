@@ -33,6 +33,7 @@ const enableButtons = function() {
 				result++;
 				localStorage.setItem("clickcount", result);
 				// console.log(result);
+				console.log(result);
 			}
 			else
 				buttons[i].classList.add("wrong");
@@ -44,12 +45,6 @@ const enableButtons = function() {
 function reset (){
 	localStorage.clear();
 	console.log(result);
-}
-
-function getvalue (){
-	result.classList.add("results");
-	console.log(result);
-	return localStorage.getItem("clickcount");
 }
 
 initGame(indexCorrect);

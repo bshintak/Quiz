@@ -8,13 +8,15 @@
 	<link rel="stylesheet" href="../css/final.css">
 </head>
 <body>
+	<script src="../game.js"></script>
 	<div class="container">
 		<div id="home" class="flex-center flex-column">
 			<!-- <h2>YOU ARE A LOSER</h2> -->
 			<!-- <h2 id="resultprint">RESULT</h2> -->
-			<a class="results" onclick="getvalue()"></a>
-			<a class="button" onclick="reset()" href="index.html">Retry</a>
-			<script src="../game.js"></script>
+			<p class="results">Of 9 questions you got
+				<script>document.write(result)</script> right
+			</p>
+			<a class="button" onclick="reset()" href="index.html">Click here to retry</a>
 		</div>
 	</div>
 </body>

@@ -1,0 +1,28 @@
+:root {
+	background-image: url(../images/rules_fundo.png);
+	background-repeat: no-repeat;
+	background-attachment: fixed;
+  	background-size: cover;
+} 
+
+.layout {
+	margin: 0 auto;
+	width: 50vw;
+}
+
+.flex-center {
+	justify-content: center;
+	align-items: center;
+}
+
+.rules {
+    font-family:Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+	padding: 2rem 3rem;
+	font-size: 1.5rem;
+    text-align: center;
+	text-decoration: none;
+	box-shadow: 0 0.4rem 1.4rem 0 black;
+	background-color: white;
+	color: rgb(27, 31, 27);
+	border-radius: 10px;
+}
