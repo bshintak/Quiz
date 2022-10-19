@@ -30,11 +30,7 @@ const enableButtons = function() {
 			if (buttonsValue[i] == true){
 				console.log(buttonsValue);
 				buttons[i].classList.add("correct");
-				// localStorage.clickcount += 1;
-				// localStorage.removeItem(localStorage.clickcount);
-				// document.querySelector("score").textContent = sessionStorage.clickcount;
 				result++;
-				console.log(result);
 				localStorage.setItem("clickcount", result);
 				// console.log(result);
 			}
@@ -45,10 +41,15 @@ const enableButtons = function() {
 	}
 }
 
-function reset ()
-{
+function reset (){
 	localStorage.clear();
 	console.log(result);
+}
+
+function getvalue (){
+	result.classList.add("results");
+	console.log(result);
+	return localStorage.getItem("clickcount");
 }
 
 initGame(indexCorrect);
