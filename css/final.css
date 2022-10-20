@@ -51,10 +51,12 @@
 	transform: none;
 }
 
+/*RESULT*/
+
 .results {
 	font-size: 1.8rem;
 	padding: 1rem 0;
-	width: 28rem;
+	width: 32rem;
 	height: 2.3rem;
 	text-align: center;
 	margin-bottom: 1rem;

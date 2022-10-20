@@ -10,14 +10,9 @@
 	width: 50vw;
 }
 
-.flex-center {
-	justify-content: center;
-	align-items: center;
-}
-
 .rules {
     font-family:Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
-	padding: 2rem 3rem;
+	padding: 2.5rem 3rem;
 	font-size: 1.5rem;
     text-align: center;
 	text-decoration: none;
@@ -25,4 +20,22 @@
 	background-color: white;
 	color: rgb(27, 31, 27);
 	border-radius: 10px;
+}
+
+.flex {
+	justify-content: initial;
+	align-items: initial;
+	display: flex;
+	flex-direction: column;
+}
+
+.button_return {
+	font-size: 1.8rem;
+	padding: 1rem 0;
+	width: 10rem;
+	text-align: center;
+	text-decoration: none;
+	color: white;
+	background-color: rgb(27, 31, 27);
+	border-radius: 20px;
 }
