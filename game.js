@@ -1,10 +1,6 @@
 let buttonsValue = new Array;
 let result = 0;
 result = localStorage.getItem("clickcount") ? localStorage.getItem("clickcount") : 0;
-// window.localStorage.setItem("result", result);
-// window.localStorage.getItem("result");
-// localStorage.setItem("result", result);
-// const result = localStorage.getItem("result");
 let indexCorrect = document.querySelector(".correctIdx").textContent;
 const buttons = document.querySelectorAll("button");
 
@@ -32,7 +28,6 @@ const enableButtons = function() {
 				buttons[i].classList.add("correct");
 				result++;
 				localStorage.setItem("clickcount", result);
-				// console.log(result);
 				console.log(result);
 			}
 			else
